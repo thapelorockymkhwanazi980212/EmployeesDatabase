@@ -129,6 +129,9 @@ public class EmployeesApp
         
         System.out.println("Enter employees age");
         int age = sc.nextInt();
+
+
+        //the error is here, when I run the String to date convertion is not working
         
         System.out.println("Enter employees date of birth(yyyy-mm-dd):");
         String dob = sc.next();
