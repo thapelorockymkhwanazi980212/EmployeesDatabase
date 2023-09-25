@@ -4,7 +4,7 @@ package employeesapp;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.sql.Date;
 import java.util.List;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -135,8 +135,8 @@ public class EmployeesApp
         
         System.out.println("Enter employees date of birth(yyyy-mm-dd):");
         String dob = sc.next();
-        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-mm-dd");
-        Date date = dateformat.parse(dob);
+       
+        Date date = Date.valueOf(dob);
                 
         System.out.println("Enter employees salary");
         double salary = sc.nextDouble();
